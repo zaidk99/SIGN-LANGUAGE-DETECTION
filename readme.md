@@ -33,8 +33,6 @@ pip install -r requirements.txt
 
 ## 📁 Project Structure
 
-## Project Structure
-
 - **signdetection/**
   - **src/**
     - `config.py` – Central configuration  
@@ -67,7 +65,68 @@ pip install -r requirements.txt
 ## Training
 - EPOCHS = 800
 - TEST_SIZE = 0.15
-- MODEL_NAME = "sign1.h5"
+- MODEL_NAME = "sign1.h5" - `Edit The Model Name`
 
 ## Detection
 - threshold = 0.8 - `Prediction confidence threshold`
+
+
+## 🚀 Quick Start
+
+- Step 1: Collect Training Data
+
+- Collect gesture data using your webcam:
+
+```bash 
+python scripts/collect_data.py
+```
+
+- Opens webcam
+- Collects gesture sequences for each sign
+- **Each sign:** - 
+      - 30 sequences
+	  - 30 frames per sequence
+	  - Saves landmark data as .npy files inside MP_Data/
+
+
+## Step 2: Train the Model
+
+- Train the LSTM model on collected data:
+
+```bash 
+python scripts/train_model.py
+```
+- Loads data from MP_Data/
+- Splits data into training and testing sets (85% / 15%)
+- Builds and compiles the LSTM model
+- Trains for configured epochs
+- Saves model as sign1.h5
+- Creates TensorBoard logs in detection/Logs/
+
+
+## Step 3: Evaluate the Model (Optional)
+
+- Evaluate model performance:
+
+``` bash 
+python scripts/evaluate_model.py
+```
+
+-**Outputs:** - 
+- Accuracy score
+- Prediction vs actual comparison
+
+## Step 4: Real-Time Detection
+
+- Run live sign language detection:
+
+```bash 
+python scripts/realtime_detection.py
+```
+- Opens webcam feed
+- Detects landmarks in real time
+- Predicts sign every 30 frames
+--**Displays:**-   
+- Probability bars
+- Detected sentence
+- Press q to quit
