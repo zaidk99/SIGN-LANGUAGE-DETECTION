@@ -17,7 +17,7 @@ The system supports data collection, training, evaluation, and real-time predict
 
 ## Requirements
 
-# Software
+## Software
 
 - Python 3.7 or higher
 
@@ -25,7 +25,7 @@ The system supports data collection, training, evaluation, and real-time predict
 pip install numpy opencv-python mediapipe tensorflow scikit-learn matplotlib
 ```
 
-# Or use the recommended requirements.txt:
+## Or use the recommended requirements.txt:
 
 ```bash
 pip install -r requirements.txt
