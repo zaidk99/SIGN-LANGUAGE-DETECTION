@@ -130,3 +130,10 @@ python scripts/realtime_detection.py
     - Probability bars
     - Detected sentence
     - Press q to quit
+
+## 📊 Performance Tips
+- Use diverse lighting conditions
+- Capture multiple angles
+- Minimum 30 sequences per sign
+- Monitor training using TensorBoard
+- Adjust confidence threshold for better predictions
