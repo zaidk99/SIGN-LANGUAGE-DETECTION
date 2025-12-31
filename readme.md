@@ -111,10 +111,10 @@ python scripts/train_model.py
 ``` bash 
 python scripts/evaluate_model.py
 ```
+- **Outputs:** - 
+    - Accuracy Score
+    - Prediction vs actual comparison
 
--**Outputs:** - 
-- Accuracy score
-- Prediction vs actual comparison
 
 ## Step 4: Real-Time Detection
 
@@ -126,7 +126,7 @@ python scripts/realtime_detection.py
 - Opens webcam feed
 - Detects landmarks in real time
 - Predicts sign every 30 frames
---**Displays:**-   
-- Probability bars
-- Detected sentence
-- Press q to quit
+- **Displays:** - 
+    - Probability bars
+    - Detected sentence
+    - Press q to quit
