@@ -15,3 +15,18 @@ The system supports data collection, training, evaluation, and real-time predict
 - Easy to add new signs and retrain the model
 - TensorBoard logging support
 
+## Requirements
+
+# Software
+
+- Python 3.7 or higher
+
+```bash 
+pip install numpy opencv-python mediapipe tensorflow scikit-learn matplotlib
+```
+
+# Or use the recommended requirements.txt:
+
+```bash
+pip install -r requirements.txt
+```
