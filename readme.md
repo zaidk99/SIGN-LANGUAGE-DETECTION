@@ -36,14 +36,14 @@ pip install -r requirements.txt
 ## Project Structure
 
 - **signdetection/**
-  - **src/** – Core application logic  
+  - **src/**
     - `config.py` – Central configuration  
     - `mediapipe_utils.py` – MediaPipe detection helpers  
     - `data_utils.py` – Data loading and preprocessing  
-    - `model_utils.py` – LSTM model definition  
-    - `visualization.py` – Drawing and visualization helpers  
+    - `model_utils.py` – LSTM model   
+    - `visualization.py` – Drawing and visualization  
 
-  - **scripts/** – Executable scripts  
+  - **scripts/** 
     - `collect_data.py` – Dataset collection  
     - `train_model.py` – Model training  
     - `evaluate_model.py` – Model evaluation  
@@ -53,3 +53,21 @@ pip install -r requirements.txt
   - `README.md`
   - `.gitignore`
   - `requirements.txt`
+
+
+## ⚙️ Configuration
+
+# Signs to detect
+signs = np.array(["please", "yes"]) `Change the Signs Data folders name as you collect`
+
+# Data collection
+no_sequences = 30        # Videos per sign
+sequence_length = 30     # Frames per video
+
+# Training
+EPOCHS = 800
+TEST_SIZE = 0.15
+MODEL_NAME = "sign1.h5"
+
+# Detection
+threshold = 0.8          # Prediction confidence threshold
