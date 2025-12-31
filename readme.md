@@ -33,23 +33,23 @@ pip install -r requirements.txt
 
 ## 📁 Project Structure
 
-signdetection/
-│
-├── src/                        
-│   ├── config.py...............# Central configuration
-│   ├── mediapipe_utils.py      # MediaPipe detection helpers
-│   ├── data_utils.py           # Data loading & preprocessing
-│   ├── model_utils.py          # LSTM model
-│   └── visualization.py        # Drawing & visualization helpers
-│
-├── scripts/                    
-│   ├── collect_data.py         # Dataset collection
-│   ├── train_model.py          # Model training
-│   ├── evaluate_model.py       # Model evaluation
-│   └── realtime_detection.py   # Real-time sign detection
-│
-├── MP_Data/                    # Collected dataset (auto-created)
-│
-├── README.md
-├── .gitignore
-└── requirements.txt
+## Project Structure
+
+- **signdetection/**
+  - **src/** – Core application logic  
+    - `config.py` – Central configuration  
+    - `mediapipe_utils.py` – MediaPipe detection helpers  
+    - `data_utils.py` – Data loading and preprocessing  
+    - `model_utils.py` – LSTM model definition  
+    - `visualization.py` – Drawing and visualization helpers  
+
+  - **scripts/** – Executable scripts  
+    - `collect_data.py` – Dataset collection  
+    - `train_model.py` – Model training  
+    - `evaluate_model.py` – Model evaluation  
+    - `realtime_detection.py` – Real-time sign detection  
+
+  - **MP_Data/** – Collected dataset (auto-created)
+  - `README.md`
+  - `.gitignore`
+  - `requirements.txt`
