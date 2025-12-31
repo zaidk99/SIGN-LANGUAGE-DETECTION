@@ -57,17 +57,17 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration
 
-# Signs to detect
-signs = np.array(["please", "yes"]) `Change the Signs Data folders name as you collect`
+## Signs to detect
+- signs = np.array(["please", "yes"]) - `Change the Signs Data folders name as you collect`
 
-# Data collection
-no_sequences = 30        # Videos per sign
-sequence_length = 30     # Frames per video
+## Data collection
+- `no_sequences = 30` - Videos per sign
+- `sequence_length = 30` - Frames per video
 
-# Training
-EPOCHS = 800
-TEST_SIZE = 0.15
-MODEL_NAME = "sign1.h5"
+## Training
+- EPOCHS = 800
+- TEST_SIZE = 0.15
+- MODEL_NAME = "sign1.h5"
 
-# Detection
-threshold = 0.8          # Prediction confidence threshold
+## Detection
+- threshold = 0.8 - `Prediction confidence threshold`
